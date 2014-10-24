@@ -1,0 +1,25 @@
+{
+  "name": "dairyplus",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "3.1.2",
+    "when": "*",
+    "express-hbs": "^0.7.9",
+    "underscore": "~1.6.0",
+    "redis": "^0.10.1",
+    "connect-assets": "^3.0.0-beta2",
+    "connect": "^2.19.6",
+    "MD5": "^1.2.1",
+    "date-format-lite": "^0.5.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-uglify": "^0.5.1"
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  ng-app="dairyplus-app" id="ng-app:dairyplus-app" ng-controller="main-controller">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>{{siteConfig.siteTitle}}</title>
+
+        <link rel="stylesheet" href="/lib/normalize.css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="mc">
+                <h1><a href="/">{{siteConfig.siteTitle}}</a></h1>
+            </div>
+        </header>
+        <div ng-view class="web-panel mc"></div>
+    </body>
+    <script src="/lib/angular/angular.min.js"></script>
+    <script src="/lib/angular-route/angular-route.min.js"></script>
+    <script src="/lib/angular-animate/angular-animate.min.js"></script>
+    <script src="/lib/marked/lib/marked.js"></script>
+    <script src="/js/index.js"></script>
+</html>

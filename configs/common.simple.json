@@ -1,0 +1,7 @@
+{
+    "siteurl" : "http://127.0.0.1:4242",
+    "sitename" : "dairplus",
+    "version" : "0.1.0",
+    "secret" : "doraamen",
+    "port": 2333
+}

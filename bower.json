@@ -1,0 +1,24 @@
+{
+  "name": "dairyplus",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "ekoneko <ekoneko9@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://ikaze.me/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/site/lib"
+  ],
+  "dependencies": {
+    "jquery": "1.9",
+    "angular": "~1.2.22",
+    "angular-animate": "~1.2.22",
+    "angular-route": "~1.2.23",
+    "normalize.css": "~3.0.2",
+    "markdown": "~0.5.0",
+    "marked": "~0.3.2"
+  }
+}

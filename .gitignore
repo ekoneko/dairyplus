@@ -1,0 +1,7 @@
+prototype/
+configs/*.json
+!configs/*.simple.json
+!configs/router.json
+node_modules/
+public/site/lib/
+public/site/data/
