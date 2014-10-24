@@ -2,7 +2,7 @@
 <html  ng-app="dairyplus-app" id="ng-app:dairyplus-app" ng-controller="main-controller">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>{{siteConfig.siteTitle}}</title>
+        <title ng-bind="siteConfig.siteTitle"></title>
 
         <link rel="stylesheet" href="/lib/normalize.css/normalize.css">
         <link rel="stylesheet" href="/css/style.css">
@@ -10,7 +10,7 @@
     <body>
         <header>
             <div class="mc">
-                <h1><a href="/">{{siteConfig.siteTitle}}</a></h1>
+                <h1><a href="/" ng-bind="siteConfig.siteTitle"></a></h1>
             </div>
         </header>
         <div ng-view class="web-panel mc"></div>
