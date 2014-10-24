@@ -53,11 +53,11 @@
             return $filter('date')(new Date(input), format);
         }
     }])
-    .filter('textformat', [function () {
+    .filter('textformat', ["$sce", function ($sce) {
         return function (input, type) {
             switch (type) {
                 case 'markdown':
-                    return marked(input);
+                    return $sce.trustAsHtml(marked(input));
                 default:
                     return input;
             }
