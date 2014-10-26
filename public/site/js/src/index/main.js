@@ -55,12 +55,13 @@
     }])
     .filter('textformat', ["$sce", function ($sce) {
         return function (input, type) {
+            var result = '';
             switch (type) {
                 case 'markdown':
-                    return $sce.trustAsHtml(marked(input));
-                default:
-                    return input;
+                    result = marked(input);
+                    break;
             }
+            return $sce.trustAsHtml(result);
         }
     }]);
 }());
