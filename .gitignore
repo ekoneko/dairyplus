@@ -6,5 +6,7 @@ node_modules/
 public/site/lib/
 public/site/data/content/*
 public/site/data/index/*
+public/site/data/tags/*
 !public/site/data/content/.gitkeep
 !public/site/data/index/.gitkeep
+!public/site/data/tags/.gitkeep
