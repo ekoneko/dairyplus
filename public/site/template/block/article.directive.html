@@ -1,0 +1,19 @@
+<article class="fl" ng-class="{
+    'has-more':hasMore,
+    'show-more': showMore
+}">
+    <h3 ng-show="article.title">{{article.title}}</h3>
+    <div class="content">
+        <div ng-bind-html="article.content | textformat : article.type"></div>
+    </div>
+    <a class="fl" href="javascript:;" ng-show="hasMore && !showMore" ng-click="showMore=1">more</a>
+    <time class="fr">{{article.date | dateformat : 'MM-d H:m'}}</time>
+</article>
+<aside class="fl">
+    <ul>
+        <li class="fl mr_8" ng-repeat="tag in article.tags | split">
+            <a ng-href="#/tag/{{tag}}">{{tag}}</a>
+        </li>
+    </ul>
+</aside>
+<div class="clear"></div>

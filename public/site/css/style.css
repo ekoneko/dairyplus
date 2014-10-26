@@ -14,6 +14,9 @@ article { width: 578px; padding: 8px 20px 12px; border: 1px solid #ddd; color: #
 article .content { font-size: 14px; margin: 6px 0;}
 article time { font-size: 12px;}
 article p { font-size: 15px; line-height: 20px;}
+article p img { max-width: 80%; max-height: 300px; display: block; margin: 0 auto;}
+article.has-more p.more { display: none;}
+article.show-more p.more { display: block;}
 aside { width: 320px; font-size: 14px; color: #666;}
 aside ul { margin: 8px 0;}
 aside ul li { list-style: none; line-height: 24px;}

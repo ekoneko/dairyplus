@@ -1,20 +1,6 @@
 <div ng-controller="index-controller">
     <h2>{{currentDate}}</h2>
-    <div ng-repeat="item in datas" class="mb_16">
-        <article class="fl">
-            <h3 ng-show="item.title">{{item.title}}</h3>
-            <div class="content" ng-bind-html="item.content | textformat : item.type"></div>
-            <time>{{item.date | dateformat : 'MM-d H:m'}}</time>
-        </article>
-        <aside class="fl">
-            <ul>
-                <li class="fl mr_8" ng-repeat="tag in item.tags | split">
-                    <a ng-href="#/tag/{{tag}}">{{tag}}</a>
-                </li>
-            </ul>
-        </aside>
-        <div class="clear"></div>
-    </div>
+    <div ng-repeat="item in datas" article="item" class="mb_16"></div>
     <div class="page">
         <div class="prev fl" ng-show="prevDate">
             <a ng-href="#/{{prevDate[0]+'/'+prevDate[1]+'/1'|dateformat:'yyyy-MM'}}">←{{prevDate[0]+'/'+prevDate[1]+'/1'|dateformat:'yyyy-MM'}}</a>
