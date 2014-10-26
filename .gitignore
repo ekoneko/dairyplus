@@ -4,5 +4,7 @@ configs/*.json
 !configs/router.json
 node_modules/
 public/site/lib/
-public/site/data/*
-!public/site/data/.gitkeep
+public/site/data/content/*
+public/site/data/index/*
+!public/site/data/content/.gitkeep
+!public/site/data/index/.gitkeep
